@@ -1,0 +1,44 @@
+{
+  "name": "html-starter",
+  "version": "1.0.0",
+  "description": "Html templating with gulp as task runner",
+  "scripts": {
+    "build": "gulp",
+    "start": "npm run build && gulp watch",
+    "test": "run-p test:*",
+    "test:lint": "eslint . --ext .js,.ts,.tsx"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@commitlint/cli": "^11.0.0",
+    "@wowvendor/commitlint-config": "^1.0.5",
+    "@wowvendor/eslint-config-base": "^2.2.0",
+    "browser-sync": "^2.26.13",
+    "cz-customizable": "^6.3.0",
+    "del": "^6.0.0",
+    "eslint": "^7.13.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
